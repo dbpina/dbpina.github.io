@@ -76,12 +76,24 @@
             margin-bottom: 15px;
         }
 
+        .social-icons {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
         .social-icons img {
             width: 60px;
             height: 60px;
-            margin-right: 10px;
-            vertical-align: middle;
+            border-radius: 50%; /* Make the social icons round */
+            transition: transform 0.3s ease;
         }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }        
 
         .quote {
             font-style: italic;
