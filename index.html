@@ -53,7 +53,8 @@
             max-width: 1200px;
             margin: auto; /* Centers the main content block itself */
         }
-
+        
+        /* New container to stack photo and social links vertically */
         .profile-panel {
             display: flex;
             flex-direction: column;
@@ -74,29 +75,25 @@
 
         .social-icons {
             display: flex;
-            flex-direction: column;
-            align-items: flex-start; /* Aligns the links to the left */
+            justify-content: center; /* Centers the row of icons */
+            align-items: center;
+            flex-wrap: wrap; /* Allows icons to wrap on smaller screens */
             margin-top: 20px;
-            gap: 15px;
+            gap: 20px; /* Adds space between each icon */
         }
         
         .social-icons a {
-            display: flex;
-            align-items: center;
-            color: #333;
-            font-size: 1.2em;
-            text-decoration: none;
-            transition: color 0.3s ease;
+            display: inline-block;
+            transition: transform 0.3s ease;
         }
-
+        
         .social-icons a:hover {
-            color: #0077b5;
+            transform: scale(1.1);
         }
 
         .social-icons a img {
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
+            width: 30px; /* Sets a fixed width for the icons */
+            height: 30px; /* Sets a fixed height for the icons */
             border-radius: 50%;
         }
 
@@ -139,10 +136,10 @@
             </div>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/deborabpina/">
-                    <img src="arquivos/dblp.png" alt="LinkedIn">
+                    <img src="arquivos/linkedin.png" alt="LinkedIn">
                 </a>
                 <a href="https://github.com/dbpina">
-                    <img src="arquivos/dblp.png" alt="GitHub">
+                    <img src="arquivos/github.jpg" alt="GitHub">
                 </a>
                 <a href="https://dblp.org/pid/258/3794.html">
                     <img src="arquivos/dblp.png" alt="DBLP">
