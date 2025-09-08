@@ -59,12 +59,21 @@
             flex: 0 0 250px;
         }
 
-        .photo img {
+/*        .photo img {
             width: 100%;
             height: auto;
             border-radius: 8px;
             border: 5px solid black; /* mantido da sua especificação */
-        }
+        }*/
+
+        .photo img {
+          border-radius: 50%; /* This is the key property */
+          width: 200px;      /* Set a fixed width */
+          height: 200px;     /* Set the same height to make it a circle */
+          object-fit: cover;  /* Ensures the image fills the circular space without distortion */
+          border-radius: 8px;
+          border: 5px solid black; /* mantido da sua especificação */
+        }        
 
         .bio {
             flex: 1;
@@ -132,7 +141,6 @@
 </head>
 <body>
     <header>
-        <a href="http://www.uff.br"><img src="arquivos/uff.png" alt="UFF Logo"></a>
         <nav>
             <ul>
                 <li><a href="https://dbpina.github.io">Home</a></li>
@@ -148,10 +156,9 @@
         <div class="bio">
             <h1>Débora Pina - Postdoctoral Researcher</h1>
             <p>D.Sc. <a href="http://www.ufrj.br/">Federal University of Rio de Janeiro</a>-<a href="http://www.cos.ufrj.br/">PESC (Programa de Engenharia de Sistemas de Computação)</a>, Rio de Janeiro, Brazil, 2012.</p>
-            <p>Welcome to my home page! I am an Associate Professor at the <a href="http://www.ic.uff.br">Institute of Computing</a> at Fluminense Federal University (IC/UFF), where I have been teaching and researching since 2013. I received my D.Sc. (2012) and M.Sc. (2008) in Systems and Computer Engineering from COPPE/UFRJ.</p>
+            <p>Welcome to my home page! I am a Postdoctoral Researcher at the <a href="https://www.pesc.coppe.ufrj.br/index.php/en/">Computer Science and Systems Engineering Program</a> at the Federal University of Rio de Janeiro (UFRJ). I received my D.Sc. (2025) and M.Sc. (2020) in Systems and Computer Engineering from COPPE/UFRJ.</p>
 
-            <p>My research interests include Data Science, Cloud Computing, Provenance Data Management, Workflow Management, Data Parallelism, Bioinformatics, and Machine Learning. I have published over 200 papers in indexed journals and top international conferences, and I regularly serve on program committees of venues such as VLDB, EDBT, ICDE, CIKM, IPAW, and SBBD.</p>
-            <p>If you are a graduate or undergraduate student, searching for academic orientation on some of the topics I am interested in, let's talk!</p>
+            <p>My research interests include Data Science, Scientific Workflows, Provenance Data Management, Workflow Management, and Machine Learning.</p>
 
             <form class="dblp-search" action="https://dblp.org/search" method="get" target="_blank">
                 <input type="text" name="q" placeholder="Search DBLP..." />
