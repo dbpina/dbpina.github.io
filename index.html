@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <title>Débora Pina - Home Page</title>
     <meta name="description" content="The Home Page of Débora Pina">
-    <!-- Font Awesome for social media icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -51,10 +49,11 @@
             flex-wrap: wrap;
             padding: 40px;
             gap: 40px;
-            justify-content: center;
+            justify-content: flex-start; /* This left-aligns the main content */
+            max-width: 1200px;
+            margin: auto; /* Centers the main content block itself */
         }
 
-        /* New container to stack photo and social links vertically */
         .profile-panel {
             display: flex;
             flex-direction: column;
@@ -75,14 +74,14 @@
 
         .social-icons {
             display: flex;
-            flex-direction: column; /* Stacks the social links vertically */
-            align-items: center; /* Centers the links */
+            flex-direction: column;
+            align-items: flex-start; /* Aligns the links to the left */
             margin-top: 20px;
-            gap: 15px; /* Adds space between each link */
+            gap: 15px;
         }
         
         .social-icons a {
-            display: flex; /* Makes each link a block to be on its own line */
+            display: flex;
             align-items: center;
             color: #333;
             font-size: 1.2em;
@@ -129,7 +128,6 @@
             <ul>
                 <li><a href="https://dbpina.github.io">Home</a></li>
                 <li><a href="https://dbpina.github.io/cv.html">Publications</a></li>
-                <li><a href="https://dbpina.github.io/grants.html">Awards and Grants</a></li>
             </ul>
         </nav>
     </header>
@@ -141,22 +139,22 @@
             </div>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/deborabpina/">
-                    <img src="arquivos/dblp.png" alt="LinkedIn">LinkedIn
+                    <img src="arquivos/dblp.png" alt="LinkedIn">
                 </a>
                 <a href="https://github.com/dbpina">
-                    <img src="arquivos/dblp.png" alt="GitHub">GitHub
+                    <img src="arquivos/dblp.png" alt="GitHub">
                 </a>
                 <a href="https://dblp.org/pid/258/3794.html">
-                    <img src="arquivos/dblp.png" alt="DBLP">DBLP
+                    <img src="arquivos/dblp.png" alt="DBLP">
                 </a>
-                <a href="hhttps://scholar.google.com/citations?user=7zpDN64AAAAJ&hl=en&oi=ao">
-                    <img src="arquivos/scholar.jpeg" alt="Google Scholar">Google Scholar
+                <a href="https://scholar.google.com/citations?user=7zpDN64AAAAJ&hl=en&oi=ao">
+                    <img src="arquivos/scholar.jpeg" alt="Google Scholar">
                 </a>
                 <a href="http://lattes.cnpq.br/1706426495467168">
-                    <img src="arquivos/lattes.jpeg" alt="Lattes">Lattes
+                    <img src="arquivos/lattes.jpeg" alt="Lattes">
                 </a>
                 <a href="https://orcid.org/0000-0001-6616-0291">
-                    <img src="arquivos/ORCID.png" alt="ORCID">ORCID
+                    <img src="arquivos/ORCID.png" alt="ORCID">
                 </a>
             </div>
         </div>
