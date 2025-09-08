@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Débora Pina - Home Page</title>
     <meta name="description" content="The Home Page of Débora Pina">
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -26,13 +28,10 @@
         header {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center; /* This centers the nav content */
             padding: 20px 40px;
             border-bottom: 1px solid #ccc;
-        }
-
-        header img {
-            height: 60px;
+            width: 100%;
         }
 
         nav ul {
@@ -52,12 +51,19 @@
             flex-wrap: wrap;
             padding: 40px;
             gap: 40px;
+            justify-content: center;
+        }
+
+        /* New container to stack photo and social links vertically */
+        .profile-panel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .photo {
             flex: 0 0 250px;
-        }       
-
+        }
 
         .photo img {
             border-radius: 50%;
@@ -65,7 +71,35 @@
             height: 250px;
             object-fit: cover;
             border: 5px solid black;
-        }     
+        }
+
+        .social-icons {
+            display: flex;
+            flex-direction: column; /* Stacks the social links vertically */
+            align-items: center; /* Centers the links */
+            margin-top: 20px;
+            gap: 15px; /* Adds space between each link */
+        }
+        
+        .social-icons a {
+            display: flex; /* Makes each link a block to be on its own line */
+            align-items: center;
+            color: #333;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #0077b5;
+        }
+
+        .social-icons a img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
 
         .bio {
             flex: 1;
@@ -76,63 +110,6 @@
             margin-bottom: 15px;
         }
 
-        .social-icons {
-            margin-top: 2rem;
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        
-        .social-icons img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%; /* Make the social icons round */
-            transition: transform 0.3s ease;
-        }
-
-        .social-icons img:hover {
-            transform: scale(1.1);
-        }        
-
-        .quote {
-            font-style: italic;
-            font-size: 0.9em;
-            margin-top: 20px;
-        }
-
-        .dblp-search {
-            display: flex;
-            max-width: 500px;
-            margin: 20px 0;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-
-        .dblp-search input[type="text"] {
-            flex: 1;
-            padding: 10px 12px;
-            font-size: 16px;
-            border: none;
-            outline: none;
-        }
-
-        .dblp-search input[type="submit"] {
-            background: #004f9e;
-            color: #fff;
-            border: none;
-            padding: 10px 18px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background 0.2s ease;
-        }
-
-        .dblp-search input[type="submit"]:hover {
-            background: #003a75;
-        }
-
         footer {
             display: flex;
             justify-content: space-between;
@@ -140,7 +117,10 @@
             border-top: 1px solid #ccc;
             background-color: #f9f9f9;
             font-size: 0.9em;
+            width: 100%;
+            box-sizing: border-box;
         }
+        
     </style>
 </head>
 <body>
@@ -149,29 +129,42 @@
             <ul>
                 <li><a href="https://dbpina.github.io">Home</a></li>
                 <li><a href="https://dbpina.github.io/cv.html">Publications</a></li>
+                <li><a href="https://dbpina.github.io/grants.html">Awards and Grants</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="photo">
-            <img src="arquivos/debora.png" alt="Débora Pina">
+        <div class="profile-panel">
+            <div class="photo">
+                <img src="arquivos/debora.png" alt="Débora Pina">
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/deborabpina/">
+                    <img src="arquivos/dblp.png" alt="LinkedIn">LinkedIn
+                </a>
+                <a href="https://github.com/dbpina">
+                    <img src="arquivos/dblp.png" alt="GitHub">GitHub
+                </a>
+                <a href="https://dblp.org/pid/258/3794.html">
+                    <img src="arquivos/dblp.png" alt="DBLP">DBLP
+                </a>
+                <a href="hhttps://scholar.google.com/citations?user=7zpDN64AAAAJ&hl=en&oi=ao">
+                    <img src="arquivos/scholar.jpeg" alt="Google Scholar">Google Scholar
+                </a>
+                <a href="http://lattes.cnpq.br/1706426495467168">
+                    <img src="arquivos/lattes.jpeg" alt="Lattes">Lattes
+                </a>
+                <a href="https://orcid.org/0000-0001-6616-0291">
+                    <img src="arquivos/ORCID.png" alt="ORCID">ORCID
+                </a>
+            </div>
         </div>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/deborabpina/"><img src="arquivos/dblp.png" alt="LinkedIn"></a>
-            <a href="https://github.com/dbpina"><img src="arquivos/dblp.png" alt="GitHub"></a>
-            <a href="https://dblp.org/pid/258/3794.html"><img src="arquivos/dblp.png" alt="DBLP"></a>
-            <a href="hhttps://scholar.google.com/citations?user=7zpDN64AAAAJ&hl=en&oi=ao"><img src="arquivos/scholar.jpeg" alt="Google Scholar"></a>
-            <a href="http://lattes.cnpq.br/1706426495467168"><img src="arquivos/lattes.jpeg" alt="Lattes"></a>
-            <a href="https://orcid.org/0000-0001-6616-0291"><img src="arquivos/ORCID.png" alt="ORCID"></a>
-        </div>        
-    </div>        
+        
         <div class="bio">
             <h1>Débora Pina - Postdoctoral Researcher</h1>
             <p>Welcome to my home page! I am a Postdoctoral Researcher at the <a href="https://www.pesc.coppe.ufrj.br/index.php/en/">Computer Science and Systems Engineering Program</a> at the Federal University of Rio de Janeiro (UFRJ). I received my D.Sc. (2025) and M.Sc. (2020) in Systems and Computer Engineering from COPPE/UFRJ.</p>
-
             <p>My research interests include Data Science, Scientific Workflows, Provenance Data Management, Workflow Management, and Machine Learning.</p>
-
         </div>
     </main>
 
