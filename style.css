@@ -145,6 +145,61 @@ li {
     margin-right: 0.5rem; 
 }
 
+/* --------------------
+    Awards & Grants Styles
+-------------------- */
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.award-card {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.award-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.award-icon {
+    font-size: 3rem;
+    color: #e76f87; /* Matching the header pink */
+    margin-bottom: 15px;
+}
+
+.award-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.25rem;
+}
+
+.award-card p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.award-photo {
+    margin-top: 15px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #e76f87;
+}
+
+
 footer {
     display: flex;
     justify-content: space-between;
