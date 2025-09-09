@@ -45,9 +45,9 @@ nav ul li a:hover {
 
 main {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     padding: 40px;
-    gap: 40px;
+    gap: 20px;
     justify-content: flex-start; /* This left-aligns the main content */
     max-width: 1200px;
     margin: auto; /* Centers the main content block itself */
