@@ -205,6 +205,18 @@ li {
     border: 3px solid #e76f87;
 }
 
+/* --------------------
+    DBLP Link Styles
+-------------------- */
+.dblp-link {
+    color: #e76f87; /* A distinct color for the DBLP link */
+}
+
+.dblp-link:hover {
+    color: #d15d74; /* A slightly darker pink on hover for contrast */
+    text-decoration: none;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
