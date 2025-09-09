@@ -172,6 +172,13 @@ li {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
+.award-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between the icon and text */
+}
+
 .award-icon {
     font-size: 3rem;
     color: #e76f87; /* Matching the header pink */
@@ -179,8 +186,7 @@ li {
 }
 
 .award-card h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
+    margin: 0; /* Remove default margin to control spacing with flexbox */
     color: #333;
     font-size: 1.25rem;
 }
@@ -198,7 +204,6 @@ li {
     border-radius: 8px;
     border: 3px solid #e76f87;
 }
-
 
 footer {
     display: flex;
