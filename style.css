@@ -69,7 +69,7 @@ main {
     width: 250px;
     height: 250px;
     object-fit: cover;
-    border: 5px solid #e76f87;    
+    border: 3px solid #e76f87;    
 }
 
 .social-icons {
