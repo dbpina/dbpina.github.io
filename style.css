@@ -104,6 +104,7 @@ main {
     width: 30px; /* Sets a fixed width for the icons */
     height: 30px; /* Sets a fixed height for the icons */
     border-radius: 50%;
+    border: none;
 }
 
 .bio {
