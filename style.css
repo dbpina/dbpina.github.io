@@ -64,14 +64,16 @@ main {
 
 .profile-panel {
     display: flex;
-    flex-direction: row; /* Default for desktop */
     align-items: flex-start;
-    gap: 40px; /* Space between photo and bio */
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 25px; /* smaller spacing between photo and bio */
+    flex-wrap: wrap;
 }
 
 .photo {
     flex: 0 0 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .photo img {
@@ -84,11 +86,9 @@ main {
 
 .social-icons {
     display: flex;
-    justify-content: center; /* Centers the row of icons */
-    align-items: center;
-    flex-wrap: wrap; /* Allows icons to wrap on smaller screens */
-    margin-top: 20px;
-    gap: 20px; /* Adds space between each icon */
+    justify-content: center;
+    margin-top: 15px; /* space between photo and icons */
+    gap: 15px;
 }
 
 .social-icons a {
