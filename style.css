@@ -64,8 +64,10 @@ main {
 
 .profile-panel {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row; /* Default for desktop */
+    align-items: flex-start;
+    gap: 40px; /* Space between photo and bio */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
 .photo {
